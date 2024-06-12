@@ -1,0 +1,457 @@
+@charset "utf-8";
+
+*,
+:before,
+:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+ul,
+ol,
+dl {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  z-index: 1;
+}
+/* font-family: 'Hina Mincho', serif;
+font-family: 'Noto Sans JP', sans-serif; */
+
+/* header */
+.header {
+  width: 100%;
+  height: 81px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+.header_logo {
+  width: 280px;
+  padding-left: 100px;
+}
+
+.header_contents {
+  padding-right: 100px;
+}
+
+.header_contents ul {
+  display: flex;
+  font-family: "Hina Mincho", serif;
+  color: #fff;
+}
+
+.header_contents ul li {
+  margin-left: 40px;
+	transition: all .3s ease 0s;
+	text-decoration: none;
+  letter-spacing: 0.1em;
+}
+
+.header_contents ul li:hover{
+	transform: scale(1.2);
+}
+
+.header_contents ul li:first-child {
+  margin-left: 0;
+}
+
+/* kv */
+
+.kv_wrapper {
+  width: 100%;
+  height: 1080px;
+  background-image: url(../img/kv.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.kv_contents {
+  height: 70%;
+  z-index: 9999;
+  position: absolute;
+  top: 181px;
+  left: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kv_logo {
+  width: 35%;
+}
+
+.kv_txt {
+  color: #fff;
+}
+
+.description {
+  font-size: 24px;
+}
+
+/* sec01 */
+
+.sec01 {
+  background-color: #f2efe7;
+  padding-top: 62px;
+  padding-bottom: 262px;
+  position: relative;
+}
+
+.sec01:before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/flower_left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 650px;
+  top: 30%;
+  left: 0;
+  display: block;
+  z-index: 0;
+}
+
+.sec01:after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/flower_right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  bottom: -2%;
+  right: 0;
+  display: block;
+  z-index: 0;
+}
+
+.sec_ttl {
+  width: 100%;
+  height: 122px;
+  padding-top: 22px;
+  margin-bottom: 93px;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+  font-family: "Hina Mincho", serif;
+  color: #4b3e19;
+  font-size: 60px;
+  letter-spacing: 0.1em;
+}
+
+.introduction_detail {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction_detail_photo {
+  width: 476px;
+  z-index: 100;
+}
+
+.detail_txt {
+  width: calc(100%-560px);
+  margin-top: 157px;
+}
+
+.sec01_photo_wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.sec01_photo_box1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+
+.sec01_photo1 {
+  width: 51%;
+  margin-top: 228px;
+  padding-top: 67px;
+
+}
+
+.sec01_photo2 {
+  width: 33%;
+}
+
+.sec01_photo3 {
+  width: 18%;
+  position: absolute;
+  z-index: 9999;
+  top: 73%;
+  left: 38%;
+}
+
+/* sec02 */
+.sec02 {
+  background-color: #f2efe7;
+  padding-bottom: 388px;
+  overflow: hidden;
+  position: relative;
+  z-index: 900;
+}
+
+.sec02:before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/flower_left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 650px;
+  top: 25%;
+  left: 0;
+  display: block;
+  z-index: 0;
+}
+
+.sec02:after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/flower_right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 500px;
+  bottom: -8%;
+  right: -10%;
+  display: block;
+  z-index: 0;
+}
+
+.cast {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.actor,
+.actress {
+  width: 42.5%;
+  z-index: 1;
+}
+
+.actor_detail,
+.actress_detail {
+  width: 100%;
+}
+
+.cast h3 {
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cast p {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.actor_photo,
+.actress_photo {
+  width: 100%;
+}
+
+.sec02_photo_wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.sec02_photo_box1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160px;
+  z-index: 900;
+}
+
+.sec02_photo1 {
+  width: 30%;
+  padding-top: 68px;
+}
+
+.sec02_photo2 {
+  width: 50%;
+}
+
+.sec02_photo3 {
+  width: 25%;
+  position: absolute;
+  z-index: 9999;
+  top: 60%;
+  left: 38%;
+}
+
+/* sec03 */
+
+/* .sec03{
+  padding-bottom: 1200px;
+  position: relative;
+  top: -150px;
+  z-index: -1;
+}
+
+
+.sec03_paralax_wrapper {
+  background-image: url(../img/room.jpg);
+  background-size: cover;
+  background-position: top right;
+  color: #fff;
+  padding-bottom: 1200px;
+}
+
+
+.story {
+  padding-top: 400px;
+  width: 60%;
+  margin: 0 auto;
+} */
+
+.sec03{
+  padding-bottom: 1000px;
+  position: relative;
+  top: -400px;
+  z-index: -1;
+}
+
+
+.sec03_paralax_wrapper {
+  height: 2800px;
+  padding-bottom: 1200px;
+  background-image: url(../img/room.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -500px;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+}
+
+
+.story {
+  padding-top: 500px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+.story_ttl {
+  font-family: "Hina Mincho", serif;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 80px;
+  letter-spacing: 0.1em;
+}
+
+.story p {
+  line-height: 2.5;
+  margin-top: 60px;
+}
+
+.story p:first-child {
+  margin-top: 0;
+}
+
+/* sec04 */
+
+.sec04 {
+  background-color: #f2efe7;
+  padding-top: 62px;
+  padding-bottom: 140px;
+  position: relative;
+}
+
+.news_box_wrapper {
+  width: 60%;
+  padding: 20px 15px;
+  height: calc(auto + 10px);
+  background-color: inherit;
+  height: auto;
+  margin: 0 auto;
+  border: 3px solid #707070;
+  margin-bottom: 200px;
+}
+
+.news_box {
+  width: 99%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #707070;
+}
+
+.news_topic {
+  margin-top: 23px;
+  margin-left: 105px;
+}
+
+.news_topic:first-child {
+  margin-top: 22px;
+}
+
+.news_topic:last-child {
+  margin-bottom: 22px;
+}
+
+.sec04_photo_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec04_photo_wrapper img{
+  width: 31%;
+}
+
+/* footer */
+
+.footer {
+  background-color: #bda663;
+  padding-bottom: 22px;
+}
+
+.footer_logo {
+  width: 200px;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+
+.footer_contents {
+  margin: 60px auto 80px;
+  background-color: #fff;
+  text-align: center;
+  color: #bda663;
+  width: 600px;
+  height: 80px;
+  letter-spacing: 0.1em;
+}
+
+.footer_contents p {
+  padding-top: 17px;
+  font-size: 32px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
